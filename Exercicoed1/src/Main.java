@@ -16,7 +16,19 @@ public class Main {
 
         switch (resposta){
             case 1:
-                System.out.println(calculadora.adicao());
+                 System.out.println(calculadora.adicao());
+                break;
+            case 2:
+                System.out.printf("Informe o primeiro valor: ");
+                long num1;
+                long num2;
+                num1 = ler.nextLong();
+
+                System.out.printf("Informe o segundo valor.: ");
+                num2= ler.nextLong();
+
+
+                System.out.println(calculadora.divisao(num1,num2 ));
                 break;
         }
 

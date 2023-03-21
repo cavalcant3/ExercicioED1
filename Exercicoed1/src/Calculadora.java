@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Calculadora {
     private int resultado;
 
@@ -12,8 +14,16 @@ public class Calculadora {
 
     }
 
-    public void divisao() {
+    public long divisao(long num1, long num2) {
 
+        if (num1 ==0 || num2 == 0){
+            return 0;
+        }
+
+
+    long teste = 0;
+
+    return teste;
     }
 
     public void raizQuadrada() {
