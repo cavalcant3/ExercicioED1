@@ -9,14 +9,27 @@ public class Main {
 
         System.out.println("Informe a operação que vocÊ deseja usar" +
                 "1 - adicao" +
-                "2 - multiplcacao");
+                "2 - divisao" +
+                "3 - multiplcacao" +
+                "4 - raizQuadrada" +
+                "5 - potenciacao" +
+                "6 - log");
 
-        int resposta = calculadora.getResultado() ;
+
+        int resposta = calculadora.getResultado();
         resposta = ler.nextInt();
 
-        switch (resposta){
+        switch (resposta) {
             case 1:
-                 System.out.println(calculadora.adicao());
+                System.out.printf("Informe o primeiro valor: ");
+                float numa;
+                float numb;
+                numa = ler.nextFloat();
+
+                System.out.printf("Informe o segundo valor.: ");
+                numb = ler.nextFloat();
+
+                System.out.println(calculadora.adicao(numa, numb));
                 break;
             case 2:
                 System.out.printf("Informe o primeiro valor: ");
@@ -25,13 +38,46 @@ public class Main {
                 num1 = ler.nextLong();
 
                 System.out.printf("Informe o segundo valor.: ");
-                num2= ler.nextLong();
+                num2 = ler.nextLong();
 
 
-                System.out.println(calculadora.divisao(num1,num2 ));
+                System.out.println(calculadora.divisao(num1, num2));
+                break;
+            case 3:
+                System.out.printf("Informe o primeiro valor: ");
+                long num3;
+                long num4;
+                num3 = ler.nextLong();
+
+                System.out.printf("Informe o segundo valor.: ");
+                num4 = ler.nextLong();
+                System.out.println(calculadora.multiplcacao(num3, num4));
+                break;
+            case 4:
+                System.out.printf("Informe o primeiro valor: ");
+                float num5;
+
+                num5 = ler.nextFloat();
+                System.out.println(calculadora.raizQuadrada(num5));
+                break;
+            case 5:
+                System.out.printf("Informe o valor da base: ");
+                double x;
+                x = ler.nextDouble();
+                System.out.printf("Informe o  valor do expoente: ");
+                double y;
+                y = ler.nextDouble();
+
+                System.out.println(calculadora.potenciacao(x, y));
+                break;
+            case 6:
+                System.out.printf("Informe o valor do log: ");
+                double a;
+                a = ler.nextDouble();
+
+                System.out.println(calculadora.log(a));
                 break;
         }
-
 
 
     }
