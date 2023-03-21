@@ -1,18 +1,28 @@
 public class Calculadora {
-    private int  resultado;
+    private int resultado;
 
 
-
-
-    public String adicao(){
+    public String adicao() {
 
         String teste = "Está funcionando";
         return teste;
     }
-    public void multiplcacao(){
+
+    public void multiplcacao() {
 
     }
-    public void divisao(){
+
+    public void divisao() {
+
+    }
+
+    public void raizQuadrada() {
+
+    }
+    public void potenciacao() {
+
+    }
+    public void log() {
 
     }
 
