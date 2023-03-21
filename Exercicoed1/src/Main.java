@@ -10,9 +10,18 @@ public class Main {
         System.out.println("Informe a operação que vocÊ deseja usar" +
                 "1 - adicao" +
                 "2 - multiplcacao");
+
         int resposta = calculadora.getResultado() ;
         resposta = ler.nextInt();
-        System.out.println(resposta);
+
+        switch (resposta){
+            case 1:
+                System.out.println(calculadora.adicao());
+                break;
+        }
+
+
+
     }
 
 }

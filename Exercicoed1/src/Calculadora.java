@@ -3,7 +3,18 @@ public class Calculadora {
 
 
 
-    
+
+    public String adicao(){
+
+        String teste = "Está funcionando";
+        return teste;
+    }
+    public void multiplcacao(){
+
+    }
+    public void divisao(){
+
+    }
 
     public int getResultado() {
         return resultado;
